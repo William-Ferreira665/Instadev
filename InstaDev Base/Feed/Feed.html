@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Feed.css">
+    <link rel="stylesheet" href="Post.css">
+</head>
+
+<body>
+    <header>
+        <div class="container container_header">
+            <img class="logo_header" src="../assets/Logo Instadev.png" alt="Logo">
+            <form method="POST" action="">
+                <label for="pesquisa"></label>
+                <input class="pesquisar_header" type="text" name="pesquisa" placeholder='Pesquisar'>
+            </form>
+            <nav class="nav">
+                <a class="icones_nav" href="#"><i class="fas fa-house-user"></i></a>
+                <a class="icones_nav" href="#"><i class="fas fa-paper-plane"></i></a>
+                <a class="icones_nav" href="#"><i class="fas fa-compass"></i></a>
+                <a class="icones_nav" href="#"><i class="far fa-heart"></i></a>
+                <a href="#"><img class="imagem_perfil" src="../assets/20200814_140037 (1).jpg" alt="Perfil"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container container_stories">
+            <div class="stories">
+                <div class="perfil_storie">
+                    <img src="../assets/baixados.jpg" alt="Foto storie">
+                    <span>Van_Gogh</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/CC19B872A7D8E8055B65CAC87731991F6A64_silvio.jpg" alt="Foto storie">
+                    <span>Silvio_Santos</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/faxl-slim.jpg" alt="Foto storie">
+                    <span>Axl_Gordo</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/sad-clown-paint-by-number-501x400.jpg" alt="Foto storie">
+                    <span>Palhaço_Triste</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/samuel-rosa-bebe.jpg" alt="Foto storie">
+                    <span>Samuel_Rosa_Bebê</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/images.jpg" alt="Foto storie">
+                    <span>Vin_Diesel</span>
+                </div>
+                <div class="perfil_storie">
+                    <img src="../assets/noticia_710824_img1_ronaldinho-gacho.jpg" alt="Foto storie">
+                    <span>Ronaldinho</span>
+                </div>
+            </div>
+            <div class="link_perfil">
+                <img src="../assets/20200814_140037 (1).jpg" alt="foto Perfil">
+                <div class="nome_perfil_feed">
+                    <span class="nick">yes_saitama</span>
+                    <span class="nome">Um Soco Man</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container_postar">
+            <div class="Postar">
+                <div class="Perfil_postar">
+                    <img class="Perfil_postar" src="../assets/20200814_140037 (1).jpg" alt="foto Perfil">
+                    <span>Postar</span>
+                </div>
+
+                <form class="form_postar" action="" method="post">
+                    <div class="campo_postar">
+                        <label for="descricao"></label>
+                        <input class="descricao" type="text" name="descricao"
+                            placeholder="Digite a descrição da imagem">
+                    </div>
+                    <div class="campo_postar upar_imagem">
+                        <label class="Postarfoto" for="Postarfoto">Escolher Imagem</label>
+                        <input class="enviar_imagem" type="file" id="Postarfoto">
+                    </div>
+                    <button class="botao_postar" type="submit">Postar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container container_post">
+            <div class="post">
+                <div class="perfil_post">
+                    <img src="../assets/faxl-slim.jpg" alt="Billy perfil">
+                    <div class="nome_localizacao">
+                        <span class="nome_post">Axl_Gordo</span>
+                        <span class="localizacao">Los Angeles, USA</span>
+                    </div>
+                </div>
+                <div class="foto_postada">
+                    <img src="../assets/3a60b2d1d4b3e848611e7a0b69eeaecf.jpg" alt="Foto Billy">
+                </div>
+                <div>
+                    <div class="curtir_comentar">
+                        <a href="#" class="icones_comentarios"><i class="far fa-heart"></i></a>
+                        <a href="#" class="icones_comentarios"><i class="far fa-comment"></i></a>
+                        <form action="" method="post">
+                            <label for=""></label>
+                            <input class="comentar" type="text" placeholder="Comentar">
+                        </form>
+                    </div>
+                    <div class="comentario">
+                        <span class="autor_comentario">Vin_Diesel</span>
+                        <span class="comentado">Mó paz irmão kkkkkk</span>
+                    </div>
+                    <div class="comentario">
+                        <span class="autor_comentario">Axl_Gordo</span>
+                        <span class="comentado">Paz e amor bro</span>
+                    </div>
+                    <div class="comentario">
+                        <span class="autor_comentario"></span>
+                        <span class="comentado">Quadrão aí hein mano!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

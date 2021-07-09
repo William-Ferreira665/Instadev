@@ -1,0 +1,48 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+<div class="menu-cadastro1">
+    <img class="logo" src="~/Images/Logo.png" alt="">
+    <div class="conteudo-cadastro1">
+
+        <form enctype="multipart/form-data" class="campo-texo1" method="POST" action='@Url.Action("Logar")'>
+            <div>
+                <input type="text" required="required" class="preencher" placeholder="   E-Mail" name="Email">
+            </div>
+            <div>
+                <input type="password" required="required" class="preencher" placeholder="   Senha" name="Senha">
+            </div>
+            <div class="box-cadastre-se1">
+                <button type="submit" class="cadastre-se1">Entrar</button>
+            </div>
+        </form>
+
+        <div class="erro">@TempData.Peek("Mensagem")</div>
+
+        <div class="linha_ou">
+            <div></div>
+            <p>OU</p>
+            <div></div>
+        </div>
+        <a href="#" class="link_cadastro1">Esqueceu a senha ?</a>
+
+    </div>
+</div>
+<div class="outro1">
+    <p class="tem-conta1">
+        Não tem uma conta?
+        <a asp-area="" asp-controller="Cadastro" asp-action="Index" class="conecte-se1">Cadastre-se</a>
+    </p>
+</div>
+<div class="obtenha-app1">
+    <p>Obtenha o aplicativo.</p>
+</div>
+<div>
+    <a href="#" class="apps-store1">
+        <img width="133" height="39" src="~/Images/appstore.png" alt="appstore.icostore">
+    </a>
+    <a href="#" class="apps-store1">
+        <img width="133" height="39" src="~/Images/googleplay.png" alt="googleplay.icostore">
+    </a>
+</div>

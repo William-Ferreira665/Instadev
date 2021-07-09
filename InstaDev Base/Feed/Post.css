@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* post todo */
+
+.post{
+    background-color: white;
+    width: 680px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Identificação do perfil acima do post */
+.perfil_post{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+}
+
+.perfil_post img{
+    width: 48px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nome_localizacao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.nome_localizacao span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.nome_post{
+    font-weight: 600;
+}
+
+.localizacao{
+    font-weight: 400;
+}
+
+/* foto que foi postada */
+.foto_postada img{
+    width: 680px;
+    height: 580px;
+}
+
+/* Aba de curtir e comentar */
+.curtir_comentar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.icones_comentarios{
+    font-size: 30px;
+    color: black;
+}
+
+.comentar{
+    border-bottom: 1.5px solid black;
+}
+
+/* Comentários de outros usuários */
+.comentario{
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.autor_comentario{
+    font-weight: 600;
+}
+
+.comentado{
+    font-weight: 400px;
+    margin-left: 10px;
+}

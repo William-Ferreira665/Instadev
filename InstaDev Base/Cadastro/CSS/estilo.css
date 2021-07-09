@@ -1,0 +1,148 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: 'Billabong', sans-serif;
+    font-size: 61px;
+    line-height: 76px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-cadastro {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 342px;
+    height: 461px;
+    margin-top: 149px;
+
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.conteudo-cadastro {
+    width: 268px;
+    height: 209px;
+}
+
+.subtitulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #909090;
+}
+
+.preencher {
+    width: 267px;
+    height: 35px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-bottom: 9px;
+}
+
+.campo-texo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cadastre-se {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cadastre-se a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cadastre-se  {
+    width: 267px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background: #2686CC;
+    border-radius: 2px;
+}
+
+.cookies {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #909090;
+}
+
+.outro {
+    width: 342px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9px;
+    
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.tem-conta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #353535;
+}
+
+.conecte-se {
+    text-decoration: none;
+}
+
+.obtenha-app {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.obtenha-app p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.apps-store {
+    text-decoration: none;
+}

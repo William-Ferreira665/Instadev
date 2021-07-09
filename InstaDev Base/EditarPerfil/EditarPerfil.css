@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+.perfil_editar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.Aba_lateral{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: white;
+    height: 610px;
+    width: 233px;
+
+    padding-top: 15px;
+    padding-right: 40px;
+
+    border-right: 2px solid #F1F1F1;
+}
+
+.Aba_lateral div{
+    display: flex;
+    align-items: center;
+}
+
+.Aba_lateral .hr{
+    height: 50px;
+    background-color: black;
+    width: 3px;
+}
+
+.Aba_lateral span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.editar_perfil{
+    width: 702px;
+    height: 610px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+}
+
+.mini_perfil{
+    display: flex;
+    align-items: center;
+}
+
+.mini_perfil img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.mini_perfil span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.editar_imagem{
+    color: #2686CC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+#Imagem_Editar{
+    height: 0px;
+    width: 0px;
+    opacity: 0;
+}
+
+.campo_editar{
+    margin-top: 15px;
+}
+
+.campo_editar label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.campo_editar input{
+    width: 430px;
+    height: 30px;
+
+    border: 2px solid #DCDCDC;
+}
+
+.perfil_editar p{
+    color: #909090;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 458px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info_pessoal{
+    color: #909090;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 354px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.enviar_deletar{
+    margin-top: 20px;
+}
+
+.enviar_editar{
+    background-color: #2686CC;
+    border-radius: 7px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: white;
+
+    padding: 6px 15px;
+}
+
+.enviar_deletar a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2686CC;
+    margin-left: 200px;
+}
+

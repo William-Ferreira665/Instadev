@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.menu-cadastro1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 342px;
+    height: 380px;
+    margin-top: 149px;
+
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.conteudo-cadastro1 {
+    width: 268px;
+    height: 209px;
+    margin-top: 30px;
+}
+
+.campo-texo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cadastre-se1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-cadastre-se1 a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cadastre-se1  {
+    width: 267px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background: #2686CC;
+    border-radius: 2px;
+}
+
+.linha_ou{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.linha_ou div{
+    width: 109px;
+    height: 2px;
+    background-color: #CBCBCB;
+}
+
+.linha_ou p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #909090;
+    font-size: 12px;
+}
+
+.link_cadastro1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 32px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outro1 {
+    width: 342px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9px;
+
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.tem-conta1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #353535;
+}
+
+.conecte-se1 {
+    text-decoration: none;
+}
+
+.obtenha-app1 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.obtenha-app1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.apps-store1 {
+    text-decoration: none;
+}

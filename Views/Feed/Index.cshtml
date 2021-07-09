@@ -1,0 +1,98 @@
+@* @model Usuario
+@{ *@
+    ViewData["Title"] = "Feed";
+}
+<div class="container container_stories">
+    <div class="stories">
+        @{
+            int i = 0;}
+
+        @foreach (var item in ViewBag.Stories)
+        {
+            @if (item.NomeUsuario == ViewBag.UsuarioLogado.NomeUsuario)
+            {
+            }
+            else
+            {
+                <div class="perfil_storie">
+                    <img src="~/img/Usuarios/@item.ImagemPerfil" alt="Foto storie">
+                    <span>@item.NomeUsuario</span>
+                </div>
+                if (i == 6)
+                {
+                    break;
+                }
+                i++;
+            }
+        }
+    </div>
+    <div class="link_perfil">
+        <img src="../img/Usuarios/@ViewBag.UsuarioLogado.ImagemPerfil" alt="foto Perfil">
+        <div class="nome_perfil_feed">
+            <span class="nick">@ViewBag.UsuarioLogado.NomeUsuario</span>
+            <span class="nome">@ViewBag.UsuarioLogado.Nome</span>
+        </div>
+    </div>
+</div>
+<div class="container container_postar">
+    <div class="Postar">
+        <div class="Perfil_postar">
+            <img class="Perfil_postar" src="~/img/Usuarios/@ViewBag.UsuarioLogado.ImagemPerfil" alt="foto Perfil">
+            <span>Postar</span>
+        </div>
+
+        <form class="form_postar" enctype="multipart/form-data" action='@Url.Action("CadastrarPost")' method="POST">
+            <div class="campo_postar">
+                <label for="descricao"></label>
+                <input class="descricao" required="required" type="text" name="Descricao"
+                    placeholder="Digite a descrição da imagem">
+            </div>
+            <div class="campo_postar upar_imagem">
+                <label class="Postarfoto" for="Postarfoto">Escolher Imagem</label>
+                <input required="required" name="Imagem" class="enviar_imagem" type="file" id="Postarfoto">
+            </div>
+            <button class="botao_postar" type="submit">Postar</button>
+        </form>
+    </div>
+</div>
+
+<div class="container container_post">
+
+    @{
+
+        foreach (var item in ViewBag.Posts)
+        {
+
+            <div class="post">
+                <div class="perfil_post">
+                    <img src="~/img/Usuarios/@item.ImagemAutor" alt="Billy perfil">
+                    <div class="nome_localizacao">
+                        <span class="nome_post">@item.NomeAutor</span>
+                        <span class="localizacao">São Paulo, SP</span>
+                    </div>
+                </div>
+                <div class="foto_postada">
+                    <img src="~/img/Posts/@item.imagem" alt="Foto Postada">
+                </div>
+                <div>
+                    <div class="curtir_comentar">
+                        <a href="#" class="icones_comentarios"><i class="far fa-heart"></i></a>
+                        <a href="#" class="icones_comentarios"><i class="far fa-comment"></i></a>
+                        <form action="" method="post">
+                            <label for=""></label>
+                            <input class="comentar" type="text" placeholder="Comentar">
+                        </form>
+                    </div>
+                    <div class="comentario descricao_post">
+                        <span class="autor_descricao">@item.NomeAutor</span>
+                        <span class="descrito">@item.Texto</span>
+                    </div>
+                    <div class="comentario">
+                        <span class="autor_comentario">Kkkkkkkkkkk</span>
+                        <span class="comentado">Daora mano!!</span>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
